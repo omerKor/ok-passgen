@@ -1,38 +1,58 @@
 .App {
-  text-align: center;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.generator {
+	background-image: #fafafa;
+	border-radius: 10px;
+	box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.2);
+	padding: 30px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.generator__header {
+	text-align: center;
+	color: #1e0099;
+	margin-bottom: 20px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.checkbox:checked:before {
+	background-color: #1e0099;
 }
-
-.App-link {
-  color: #61dafb;
+.generator__password {
+	background-color: #fafafa;
+	box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.2);
+	padding: 13px 10px;
+	color: #fff;
+	margin-bottom: 15px;
+	height: 46px;
+	display: flex;
+	justify-content: space-between;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.generator__password h3 {
+	color: #1e0099;
+}
+.copy__btn {
+	color: #1e0099;
+	border: none;
+	cursor: pointer;
+	min-width: 1.125rem;
+	background-color: #fafafa;
+}
+.generator__btn {
+	background: #1e0099;
+	border: none;
+	width: 100%;
+	margin-top: 10px;
+	padding: 10px;
+	color: #fff;
+	border-radius: 30px;
+	font-size: 10px;
+	cursor: pointer;
+}
+.form-group {
+	display: flex;
+	justify-content: space-between;
+	color: gre;
+	margin-bottom: 15px;
 }
